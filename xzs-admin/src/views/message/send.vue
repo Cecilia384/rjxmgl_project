@@ -8,13 +8,21 @@
       <el-form-item label="内容：" prop="content" required>
         <el-input type="textarea" rows="13"  v-model="form.content"></el-input>
       </el-form-item>
-      <el-form-item label="接收人：" required>
-        <el-select v-model="form.receiveUserIds" multiple filterable remote reserve-keyword
-          placeholder="请输入用户名"
-          :remote-method="getUserByUserName"
-          :loading="selectLoading">
-          <el-option v-for="item in options" :key="item.value" :label="item.name" :value="item.value"/>
-        </el-select>
+      <el-form-item label="接收人：" required label-width="100px">
+        <el-row>
+          <el-col :span="5">
+            <el-select v-model="form.receiveUserIds" multiple filterable remote reserve-keyword
+                       placeholder="请输入用户名"
+                       :remote-method="getUserByUserName"
+                       :loading="selectLoading"
+                       :disabled="form.sendToAllUsers">
+              <el-option v-for="item in options" :key="item.value" :label="item.name" :value="item.value"/>
+            </el-select>
+          </el-col>
+          <el-col :span="4" style="text-align: right;">
+            <el-checkbox v-model="form.sendToAllUsers">发送给所有人</el-checkbox>
+          </el-col>
+        </el-row>
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="submitForm">发送</el-button>
@@ -35,7 +43,8 @@ export default {
       form: {
         title: '',
         content: '',
-        receiveUserIds: []
+        receiveUserIds: [],
+        sendToAllUsers: false
       },
       formLoading: false,
       selectLoading: false,
@@ -50,6 +59,15 @@ export default {
       }
     }
   },
+  // watch: {
+  //   'form.sendToAllUsers': function (val) {
+  //     if (val) {
+  //       this.$refs.form.clearValidate('receiveUserIds')
+  //       this.$refs.form.clearValidate('sendToAllUsers')
+  //       this.form.receiveUserIds = []
+  //     }
+  //   }
+  // },
   created () {
   },
   methods: {

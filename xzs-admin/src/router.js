@@ -57,20 +57,20 @@ const constantRoutes = [
         name: 'UserStudentEdit',
         meta: { title: '学生编辑', noCache: true, activeMenu: '/user/student/list' },
         hidden: true
-      },
-      {
-        path: 'admin/list',
-        component: () => import('@/views/user/admin/list'),
-        name: 'UserAdminPageList',
-        meta: { title: '管理员列表', noCache: true }
-      },
-      {
-        path: 'admin/edit',
-        component: () => import('@/views/user/admin/edit'),
-        name: 'UserAdminEdit',
-        meta: { title: '管理员编辑', noCache: true, activeMenu: '/user/admin/list' },
-        hidden: true
       }
+      // {
+      //   path: 'admin/list',
+      //   component: () => import('@/views/user/admin/list'),
+      //   name: 'UserAdminPageList',
+      //   meta: { title: '管理员列表', noCache: true }
+      // },
+      // {
+      //   path: 'admin/edit',
+      //   component: () => import('@/views/user/admin/edit'),
+      //   name: 'UserAdminEdit',
+      //   meta: { title: '管理员编辑', noCache: true, activeMenu: '/user/admin/list' },
+      //   hidden: true
+      // }
     ]
   },
   {

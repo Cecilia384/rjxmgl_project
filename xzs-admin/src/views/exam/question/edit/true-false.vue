@@ -1,16 +1,16 @@
 <template>
   <div class="app-container">
     <el-form :model="form" ref="form" label-width="100px" v-loading="formLoading"  :rules="rules">
-      <el-form-item label="年级：" prop="gradeLevel" required>
-        <el-select v-model="form.gradeLevel" placeholder="年级"  @change="levelChange">
-          <el-option v-for="item in levelEnum" :key="item.key" :value="item.key" :label="item.value"></el-option>
-        </el-select>
-      </el-form-item>
-      <el-form-item label="学科：" prop="subjectId" required>
-        <el-select v-model="form.subjectId" placeholder="学科" >
-          <el-option v-for="item in subjectFilter" :key="item.id" :value="item.id" :label="item.name+' ( '+item.levelName+' )'"></el-option>
-        </el-select>
-      </el-form-item>
+<!--      <el-form-item label="年级：" prop="gradeLevel" required>-->
+<!--        <el-select v-model="form.gradeLevel" placeholder="年级"  @change="levelChange">-->
+<!--          <el-option v-for="item in levelEnum" :key="item.key" :value="item.key" :label="item.value"></el-option>-->
+<!--        </el-select>-->
+<!--      </el-form-item>-->
+<!--      <el-form-item label="学科：" prop="subjectId" required>-->
+<!--        <el-select v-model="form.subjectId" placeholder="学科" >-->
+<!--          <el-option v-for="item in subjectFilter" :key="item.id" :value="item.id" :label="item.name+' ( '+item.levelName+' )'"></el-option>-->
+<!--        </el-select>-->
+<!--      </el-form-item>-->
       <el-form-item label="题干：" prop="title" required>
         <el-input v-model="form.title"   @focus="inputClick(form,'title')" />
       </el-form-item>
@@ -68,8 +68,9 @@ export default {
       form: {
         id: null,
         questionType: 3,
-        gradeLevel: null,
-        subjectId: null,
+        // gradeLevel: null,
+
+        // subjectId: null,
         title: '',
         items: [
           { id: null, prefix: 'A', content: '是' },
@@ -83,12 +84,12 @@ export default {
       subjectFilter: null,
       formLoading: false,
       rules: {
-        gradeLevel: [
-          { required: true, message: '请选择年级', trigger: 'change' }
-        ],
-        subjectId: [
-          { required: true, message: '请选择学科', trigger: 'change' }
-        ],
+        // gradeLevel: [
+        //   { required: true, message: '请选择年级', trigger: 'change' }
+        // ],
+        // subjectId: [
+        //   { required: true, message: '请选择学科', trigger: 'change' }
+        // ]
         title: [
           { required: true, message: '请输入题干', trigger: 'blur' }
         ],
@@ -177,8 +178,9 @@ export default {
       this.form = {
         id: null,
         questionType: 3,
-        gradeLevel: null,
-        subjectId: null,
+        // gradeLevel: null,
+
+        // subjectId: null,
         title: '',
         items: [
           { id: null, prefix: 'A', content: '是' },

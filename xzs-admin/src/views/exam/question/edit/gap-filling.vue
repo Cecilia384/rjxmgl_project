@@ -63,8 +63,7 @@ export default {
       form: {
         id: null,
         questionType: 4,
-       // gradeLevel: null,
-
+        // gradeLevel: null,
         // subjectId: null,
         title: '',
         items: [
@@ -214,8 +213,7 @@ export default {
       this.form = {
         id: null,
         questionType: 4,
-       // gradeLevel: null,
-
+        // gradeLevel: null,
         // subjectId: null,
         title: '',
         items: [

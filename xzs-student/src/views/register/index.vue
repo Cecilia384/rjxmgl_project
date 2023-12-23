@@ -1,13 +1,10 @@
 <template>
   <div class="lowin  lowin-blue">
-    <div class="lowin-brand">
-      <img src="@/assets/logo2.png" alt="logo" style="margin-top: 12px">
-    </div>
     <div class="lowin-wrapper">
       <div class="lowin-box lowin-register">
         <div class="lowin-box-inner">
           <el-form ref="loginForm" :model="loginForm">
-            <p>学之思开源考试系统</p>
+            <p style="font-size: 30px;">项目管理课程</p>
             <div class="lowin-group">
               <label>用户名 </label>
               <el-input ref="userName" v-model="loginForm.userName" class="lowin-input" placeholder="用户名"
@@ -35,9 +32,6 @@
           </el-form>
         </div>
       </div>
-    </div>
-    <div class="account-foot-copyright">
-      <span>Copyright ©2019-2023 武汉思维跳跃科技有限公司 版权所有</span>
     </div>
   </div>
 </template>

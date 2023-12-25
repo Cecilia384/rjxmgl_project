@@ -3,9 +3,9 @@
     <el-header height="61" class="student-header" style="margin-top: 10px">
       <div class="head-user">
         <el-dropdown trigger="click" placement="bottom">
-          <el-badge :is-dot="messageCount!==0" >
+
             <el-avatar  class="el-dropdown-avatar" size="medium"  :src="userInfo.imagePath === null ? require('@/assets/avatar.png') : userInfo.imagePath"></el-avatar>
-          </el-badge>
+
           <el-dropdown-menu slot="dropdown">
             <el-dropdown-item @click.native="$router.push({path:'/user/index'})">个人中心</el-dropdown-item>
             <el-dropdown-item @click.native="logout" divided>退出</el-dropdown-item>

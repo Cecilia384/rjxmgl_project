@@ -1,6 +1,6 @@
 <template>
   <el-container>
-    <el-header height="61" class="student-header">
+    <el-header height="61" class="student-header" style="margin-top: 10px">
       <div class="head-user">
         <el-dropdown trigger="click" placement="bottom">
           <el-badge :is-dot="messageCount!==0" >
@@ -89,5 +89,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.item{
+  margin-top: 10px;
+}
 </style>

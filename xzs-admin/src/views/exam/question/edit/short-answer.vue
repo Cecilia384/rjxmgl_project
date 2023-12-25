@@ -61,7 +61,6 @@ export default {
         id: null,
         questionType: 5,
         // gradeLevel: null,
-
         // subjectId: null,
         title: '',
         items: [],
@@ -168,7 +167,6 @@ export default {
         id: null,
         questionType: 5,
         // gradeLevel: null,
-
         // subjectId: null,
         title: '',
         items: [],

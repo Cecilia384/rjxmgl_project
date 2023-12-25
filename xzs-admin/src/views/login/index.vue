@@ -50,10 +50,6 @@
       <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">登录</el-button>
 
     </el-form>
-
-    <div class="account-foot-copyright">
-      <span>Copyright ©2019-2023 武汉思维跳跃科技有限公司 版权所有</span>
-    </div>
   </div>
 </template>
 
@@ -166,7 +162,7 @@ export default {
 
 $bg:#283443;
 $light_gray:#fff;
-$cursor: #f0dbc1;
+$cursor: #e3e3e3;
 
 @supports (-webkit-mask: none) and (not (cater-color: $cursor)) {
   .login-container .el-input input {
@@ -176,6 +172,7 @@ $cursor: #f0dbc1;
 
 /* reset element-ui css */
 .login-container {
+  border-color: #2d2d2d;
   .el-input {
     display: inline-block;
     height: 47px;
@@ -208,14 +205,15 @@ $cursor: #f0dbc1;
 </style>
 
 <style lang="scss" scoped>
-$bg: rgba(64, 103, 154, 0.77);
-$dark_gray:#889aa4;
-$light_gray:#eee;
+$bg: rgb(231, 231, 231);
+$dark_gray: #ffffff;
+$light_gray: #5581d9;
 
 .login-container {
   min-height: 100%;
   width: 100%;
   background-color: $bg;
+  border: 1px solid #456488;
   overflow: hidden;
 
   .login-form {
@@ -225,12 +223,12 @@ $light_gray:#eee;
     padding:30px 50px 10px 50px;
     margin:120px auto auto auto;
     overflow: hidden;
-    background: rgba(252, 254, 255, 0.11)
+    background: rgb(255, 255, 255)
   }
 
   .tips {
     font-size: 14px;
-    color: #fff;
+    color: #456488;
     margin-bottom: 10px;
 
     span {

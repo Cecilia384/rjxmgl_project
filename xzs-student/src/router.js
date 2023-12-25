@@ -76,7 +76,7 @@ const router = new Router({
           path: 'message',
           component: () => import('@/views/user-info/message'),
           name: 'UserMessage',
-          meta: { title: '消息中心' }
+          meta: { title: '公告栏' }
         }
       ]
     },

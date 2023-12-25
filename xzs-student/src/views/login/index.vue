@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="account-foot-copyright">
-      <span>Copyright ©2019-2023 武汉思维跳跃科技有限公司 版权所有</span>
+      <span>Copyright ©项目管理课程</span>
     </div>
   </div>
 </template>

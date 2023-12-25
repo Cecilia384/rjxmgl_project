@@ -8,12 +8,6 @@
           </el-badge>
           <el-dropdown-menu slot="dropdown">
             <el-dropdown-item @click.native="$router.push({path:'/user/index'})">个人中心</el-dropdown-item>
-            <el-dropdown-item @click.native="$router.push({path:'/user/message'})">
-              <el-badge :value="messageCount" v-if="messageCount!==0">
-                <span>消息中心</span>
-              </el-badge>
-              <span  v-if="messageCount===0">消息中心</span>
-            </el-dropdown-item>
             <el-dropdown-item @click.native="logout" divided>退出</el-dropdown-item>
           </el-dropdown-menu>
         </el-dropdown>
@@ -23,6 +17,12 @@
         <el-menu-item index="/paper/index">试卷中心</el-menu-item>
         <el-menu-item index="/record/index">考试记录</el-menu-item>
         <el-menu-item index="/question/index">错题本</el-menu-item>
+        <el-menu-item @click.native="$router.push({path:'/user/message'})">
+          <el-badge :value="messageCount" v-if="messageCount!==0">
+            <span>公告栏</span>
+          </el-badge>
+          <span  v-if="messageCount===0">公告栏</span>
+        </el-menu-item>
       </el-menu>
       <div>
         <a href="/"><img src="@/assets/logo.png" height="56"/></a>

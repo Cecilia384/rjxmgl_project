@@ -17,7 +17,7 @@
       </el-carousel>
     </el-row>
     <el-row class="app-item-contain">
-      <h3 class="index-title-h3" style="border-left: solid 10px #3651d4;">任务中心</h3>
+      <h3 class="index-title-h3" style="border-left: solid 10px #3651d4;">作业中心</h3>
       <div style="padding-left: 15px">
         <el-collapse  v-loading="taskLoading"  accordion v-if="taskList.length!==0">
           <el-collapse-item :title="taskItem.title" :name="taskItem.id" :key="taskItem.id" v-for="taskItem in taskList">
@@ -49,7 +49,7 @@
       </div>
     </el-row>
     <el-row class="app-item-contain">
-      <h3 class="index-title-h3">作业栏</h3>
+      <h3 class="index-title-h3">练习册</h3>
       <div style="padding-left: 15px">
         <el-col :span="4" v-for="(item, index) in fixedPaper" :key="index" :offset="index > 0 ? 1 : 0">
           <el-card :body-style="{ padding: '0px' }" v-loading="loading">

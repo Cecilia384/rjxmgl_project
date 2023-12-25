@@ -46,8 +46,8 @@
           </el-form-item>
         </el-card>
       </el-form-item>
-      <el-form-item label="建议时长：" prop="suggestTime" required>
-        <el-input v-model="form.suggestTime" placeholder="分钟"/>
+      <el-form-item label="建议时长：" prop="suggestTime"  required>
+        <el-input v-model="form.suggestTime" type="number" placeholder="分钟"/>
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="submitForm">提交</el-button>

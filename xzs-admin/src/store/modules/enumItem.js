@@ -11,7 +11,7 @@ const state = {
   },
   exam: {
     examPaper: {
-      paperTypeEnum: [{ key: 1, value: '作业' }, { key: 4, value: '测试' }, { key: 6, value: '任务' }]
+      paperTypeEnum: [{ key: 1, value: '练习' }, { key: 4, value: '测试' }, { key: 6, value: '作业' }]
     },
     question: {
       typeEnum: [{ key: 1, value: '单选题' }, { key: 2, value: '多选题' }, { key: 3, value: '判断题' }, { key: 4, value: '填空题' }, { key: 5, value: '简答题' }],

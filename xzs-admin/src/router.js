@@ -210,7 +210,7 @@ const constantRoutes = [
     component: Layout,
     name: 'MessagePage',
     meta: {
-      title: '消息中心',
+      title: '公告栏',
       icon: 'message'
     },
     alwaysShow: true,
@@ -219,13 +219,13 @@ const constantRoutes = [
         path: 'list',
         component: () => import('@/views/message/list'),
         name: 'MessageListPage',
-        meta: { title: '消息列表', noCache: true }
+        meta: { title: '公告列表', noCache: true }
       },
       {
         path: 'send',
         component: () => import('@/views/message/send'),
         name: 'MessageSendPage',
-        meta: { title: '消息发送', noCache: true }
+        meta: { title: '公告发送', noCache: true }
       }
     ]
   },

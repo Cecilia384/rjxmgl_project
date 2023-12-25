@@ -45,10 +45,10 @@ export default {
       options: [],
       rules: {
         title: [
-          { required: true, message: '请输入消息标题', trigger: 'blur' }
+          { required: true, message: '请输入公告标题', trigger: 'blur' }
         ],
         realName: [
-          { required: true, message: '请输入消息内容', trigger: 'blur' }
+          { required: true, message: '请输入公告内容', trigger: 'blur' }
         ]
       }
     }

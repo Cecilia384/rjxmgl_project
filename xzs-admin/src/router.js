@@ -143,7 +143,7 @@ const constantRoutes = [
     component: Layout,
     name: 'TaskPage',
     meta: {
-      title: '任务管理',
+      title: '作业管理',
       icon: 'task'
     },
     alwaysShow: true,
@@ -152,13 +152,13 @@ const constantRoutes = [
         path: 'list',
         component: () => import('@/views/task/list'),
         name: 'TaskListPage',
-        meta: { title: '任务列表', noCache: true }
+        meta: { title: '作业列表', noCache: true }
       },
       {
         path: 'edit',
         component: () => import('@/views/task/edit'),
         name: 'TaskEditPage',
-        meta: { title: '任务创建', noCache: true }
+        meta: { title: '作业创建', noCache: true }
       }
     ]
   },

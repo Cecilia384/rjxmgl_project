@@ -57,10 +57,9 @@ export default {
       let _this = this
       subjectApi.list().then(re => {
         _this.subjectList = re.response
-        let subjectId = _this.subjectList[0].id
-        _this.queryParam.subjectId = subjectId
-        _this.tabId = subjectId.toString()
-        _this.search()
+        // let subjectId = _this.subjectList[0].id
+        // _this.queryParam.subjectId = subjectId
+        // _this.tabId = subjectId.toString()
       })
     },
     search () {

@@ -205,9 +205,9 @@ $cursor: #e3e3e3;
 </style>
 
 <style lang="scss" scoped>
-$bg: rgb(231, 231, 231);
+$bg: rgb(246, 246, 248);
 $dark_gray: #ffffff;
-$light_gray: #5581d9;
+$light_gray: #ffffff;
 
 .login-container {
   min-height: 100%;
@@ -223,7 +223,7 @@ $light_gray: #5581d9;
     padding:30px 50px 10px 50px;
     margin:120px auto auto auto;
     overflow: hidden;
-    background: rgb(255, 255, 255)
+    background: rgb(33, 32, 32)
   }
 
   .tips {
